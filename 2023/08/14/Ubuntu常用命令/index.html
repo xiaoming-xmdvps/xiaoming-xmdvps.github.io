@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ubuntu常用命令 | Xiaoming&#39;s Blog</title>
+<noscript>开启Javascript是必要的</noscript>
+<link rel="icon" type="image/x-icon" href="/img/avatar.png">
+<link rel="apple-touch-icon" href="/img/avatar.png">
+<meta name="apple-mobile-web-app-title" content="Xiaoming&#39;s Blog">
+<link rel="bookmark" href="/img/avatar.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/avatar.png">
+<meta name="description" content="A blog for sharing technology">
+<meta name="theme-color" content="#1C1C1F">
+<link rel="stylesheet" href="/css/var.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+
+<link rel="stylesheet" href="/lib/snackbar.min.css">
+
+
+<script src="/lib/qrcode.min.js"></script>
+
+
+    
+<script src="https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js"></script>
+
+
+
+
+    <script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?b0ba66b8ea2909c3fdc3b993b1def555"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>
+
+<script>var GLOBALCONFIG = {"root":"/","runtime":"2023-07-13 00:00:00","lazyload":{"enable":false,"error":"/img/wp.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":true,"lang":{"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早上好","noon":"中午好","afternoon":"下午好","night":"晚上好","goodnight":"晚安","iam":"!  我是"},"search":{"empty":"搜索结果为空","hit":"已为您找到 ${query} 条结果","placeholder":"输入关键词快速查找"}},"covercolor":false,"comment":{"enable":true,"twikooUrl":"https://twikoo.xmdvps.top"},"localsearch":{"preload":false,"path":"/search.xml"}};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":true,"is_page":false,"page":false,"toc":true,"comment":true};</script>
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body id="body">
+        
+        <div id="console" style="zoom: 1;" class="">
+    <div class="close-btn" onclick="acrylic.hideConsole()" href="javascript:void(0);">
+        <i class="fas fa-circle-xmark"></i>
+    </div>
+    
+        <div class="console-card-group">
+            <div class="console-card-group-left">
+                <div class="console-card" id="card-newest-comments" onclick="acrylic.hideConsole()">
+                    <div class="card-content">
+                        <div class="author-content-item-tips">互动</div>
+                        <div class="author-content-item-title">最新评论</div>
+                    </div>
+                    <div class="aside-list"></div>
+                </div>
+    
+            </div>
+            <div class="console-card-group-right">
+                <div class="console-card tags" onclick="acrylic.hideConsole()">
+                    <div class="card-content">
+                        <div class="author-content-item-tips">标签</div>
+                        <div class="author-content-item-title">寻找感兴趣的领域</div>
+                    </div>
+                    <div class="card-tag-cloud">
+                        
+                            <a href="/tags/%E7%B2%BE%E9%80%89/" style="font-size: 0.8rem; color: #d3d3d3">精选<sup>2</sup></a>
+                        
+                            <a href="/tags/%E7%83%AD%E9%97%A8/" style="font-size: 0.8rem; color: #d3d3d3">热门<sup>2</sup></a>
+                        
+                            <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.8rem; color: #d3d3d3">教程<sup>3</sup></a>
+                        
+                    </div>
+                </div>
+                <div class="console-card history" onclick="acrylic.hideConsole()">
+                    <ul class="card-archive-list">
+    
+     
+        <li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2023/08/')" data-pjax-state=""><span
+            class="card-archive-list-date">2023/08</span>
+            <div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span
+                    class="card-archive-list-count-unit">篇</span></div>
+            </a>
+        </li>
+        
+</ul>
+
+                </div>
+            </div>
+        </div>
+    
+    
+    <div class="button-group">
+        <div class="console-btn-item"> <a class="darkmode_switchbutton" onclick="acrylic.switchDarkMode()" title="显示模式切换"
+                href="javascript:void(0);" rel="external nofollow" data-pjax-state=""><i class="fas fa-moon"
+                    style="font-size: 1rem;"></i></a></div>
+        
+    </div>
+    <div class="console-mask" onclick="acrylic.hideConsole()" href="javascript:void(0);" rel="external nofollow"></div>
+</div>
+        <div id="sidebar" style="zoom: 1;">
+    <div id="menu-mask" style="display: none;"></div>
+    <div id="sidebar-menus" class>
+        <span class="sidebar-menu-item-title">功能</span>
+        <div class="sidebar-menu-item">
+            <a class="darkmode_switchbutton menu-child" onclick="acrylic.switchDarkMode()" title="显示模式切换"
+                href="javascript:void(0);" rel="external nofollow">
+                <i class="fas fa-moon" style="font-size: 1rem;"></i>
+                <span>显示模式</span>
+            </a>
+        </div>
+        
+            <div class="back-menu-list-groups">
+    
+      
+      <div class="back-menu-list-group">
+        <div class="back-menu-list-title">
+          我的
+        </div>
+        <div class="back-menu-list">
+          
+            
+            <a class="back-menu-item" href="/" rel="external nofollow" title="博客">
+              <img class="back-menu-item-icon" src="/img/avatar.png" loading="lazy">
+              <span class="back-menu-item-text">
+                博客
+              </span>
+            </a>
+          
+        </div>
+      </div>
+    
+  </div>
+  
+        
+        <div class="menus_items">
+    
+        <div class="menus_item">
+            
+                <a class="site-page" href="javascript:void(0);" rel="external nofollow">
+                    <span> 文库</span>
+                </a>
+                <ul class="menus_item_child">
+                    
+                        <li>
+                            <a class="site-page child" href="/archives/">
+                                <i class="fas fa-box-archive"></i>
+                                <span> 文章列表</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/categories/">
+                                <i class="fas fa-cube"></i>
+                                <span> 全部分类</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/tags/">
+                                <i class="fas fa-tags"></i>
+                                <span> 全部标签</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+             
+        </div>
+    
+        <div class="menus_item">
+            
+                <a class="site-page" href="javascript:void(0);" rel="external nofollow">
+                    <span> 友链</span>
+                </a>
+                <ul class="menus_item_child">
+                    
+                        <li>
+                            <a class="site-page child" href="/says/">
+                                <i class="fas fa-fish-fins"></i>
+                                <span> 即刻短文</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/links/">
+                                <i class="fas fa-user-group"></i>
+                                <span> 友情链接</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html">
+                                <i class="fas fa-bus"></i>
+                                <span> 宝藏博主</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+             
+        </div>
+    
+</div>
+        <span class="sidebar-menu-item-title">标签</span>
+        <div class="card-widget card-tags card-archives card-webinfo card-allinfo">
+            <div class="item-headline">
+                <i class="fas fa-tags"></i>
+                <span>标签</span>
+            </div>
+            <div class="card-tag-cloud">
+                
+                    <a href="/tags/%E7%B2%BE%E9%80%89/" style="font-size: 1em; color: #d3d3d3">精选
+                        <sup>2</sup>
+                    </a>
+                
+                    <a href="/tags/%E7%83%AD%E9%97%A8/" style="font-size: 1em; color: #d3d3d3">热门
+                        <sup>2</sup>
+                    </a>
+                
+                    <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1em; color: #d3d3d3">教程
+                        <sup>3</sup>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</div>    
+        
+            <div class="post" id="body-wrap">
+                <header class="post-bg" id="page-header">
+    <nav id="nav" class="show">
+    <div id="nav-group">
+        <div id="blog_name">
+            
+                <div class="back-home-button" tabindex="-1">
+                    <i class="back-home-button-icon fas fa-grip-vertical"></i>
+                    <div class="back-menu-list-groups">
+    
+      
+      <div class="back-menu-list-group">
+        <div class="back-menu-list-title">
+          我的
+        </div>
+        <div class="back-menu-list">
+          
+            
+            <a class="back-menu-item" href="/" rel="external nofollow" title="博客">
+              <img class="back-menu-item-icon" src="/img/avatar.png" loading="lazy">
+              <span class="back-menu-item-text">
+                博客
+              </span>
+            </a>
+          
+        </div>
+      </div>
+    
+  </div>
+  
+                </div>
+            
+            <a id="site-name" href="/" title="返回博客主页">
+                    
+                        <span class="heoicon">xmdvps</span>
+                    
+            </a>
+        </div>
+        <div id="page-name-mask">
+            <div id="page-name">
+                <a id="page-name-text" onclick="acrylic.toTop()">Ubuntu常用命令</a>
+            </div>
+        </div>
+        <div id="menus">
+            <div class="menus_items">
+    
+        <div class="menus_item">
+            
+                <a class="site-page" href="javascript:void(0);" rel="external nofollow">
+                    <span> 文库</span>
+                </a>
+                <ul class="menus_item_child">
+                    
+                        <li>
+                            <a class="site-page child" href="/archives/">
+                                <i class="fas fa-box-archive"></i>
+                                <span> 文章列表</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/categories/">
+                                <i class="fas fa-cube"></i>
+                                <span> 全部分类</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/tags/">
+                                <i class="fas fa-tags"></i>
+                                <span> 全部标签</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+             
+        </div>
+    
+        <div class="menus_item">
+            
+                <a class="site-page" href="javascript:void(0);" rel="external nofollow">
+                    <span> 友链</span>
+                </a>
+                <ul class="menus_item_child">
+                    
+                        <li>
+                            <a class="site-page child" href="/says/">
+                                <i class="fas fa-fish-fins"></i>
+                                <span> 即刻短文</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/links/">
+                                <i class="fas fa-user-group"></i>
+                                <span> 友情链接</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html">
+                                <i class="fas fa-bus"></i>
+                                <span> 宝藏博主</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+             
+        </div>
+    
+</div>
+        </div>
+        <!-- <div id="nav-left">
+            <div id="fps-group">
+                <div id="fps">145</div><span class="fpsText">FPS</span>
+            </div>
+        </div> -->
+        <div id="nav-right">
+            
+
+    <div class="nav-button" id="randomPost_button">
+        <a class="site-page" onclick="toRandomPost()"
+            title="随机前往一个文章">
+            <i class="fas fa-shuffle" style="font-size: 1rem;"></i>
+        </a>
+    </div>
+
+
+    <div class="nav-button" id="search-button">
+        <a class="site-page social-icon search" title="站内搜索"
+            href="javascript:void(0);" rel="external nofollow">
+            <i class="fas fa-magnifying-glass" style="font-size: 1rem;"></i>
+        </a>
+    </div>
+
+
+    <div class="nav-button" id="nav-console">
+        <a class="console_switchbutton" onclick="acrylic.showConsole()"
+        title="显示中控台" href="javascript:void(0);" rel="external nofollow">
+        <i class="fas fa-bars-progress" style="font-size: 1rem;"></i>
+        </a>
+    </div>
+
+<div class="nav-button" id="nav-totop" onclick="acrylic.toTop()">
+    <a class="totopbtn">
+        <i class="fas fa-arrow-up"></i>
+        <span id="percent">0</span>
+    </a>
+</div>
+<div id="toggle-menu">
+    <a class="site-page">
+        <i class="fas fa-bars fa-fw" style="font-size: 1rem;"></i>
+    </a>
+</div>
+        </div>
+    </div>
+</nav>
+    
+        <div class="coverdiv" id="coverdiv">
+    <img id="post-cover" class="nolazyload" src="/img/article/ubuntu.jpg" alt="cover">
+</div>
+<div id="post-info">
+    <div id="post-firstinfo">
+        <div class="meta-firstline">
+            <a class="post-meta-original" title="该文章为原创文章，注意版权协议">
+                原创
+            </a>
+            
+            <span class="post-meta-categories">
+                
+                    <a class="post-meta-categories" href="/categories/Linux/">Linux</a>
+                
+            </span>
+            
+            <div class="tag_share">
+                <div class="post-meta__tag-list">
+                    
+                        <a class="post-meta__tags" href="/tags/%E7%B2%BE%E9%80%89/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">精选</span>
+                        </a>
+                    
+                        <a class="post-meta__tags" href="/tags/%E7%83%AD%E9%97%A8/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">热门</span>
+                        </a>
+                    
+                        <a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">教程</span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="post-title">Ubuntu常用命令</h1>
+    <div id="post-meta">
+        <div class="meta-secondline">
+            <span class="post-meta-date" title="发布于">
+                <i class="post-meta-icon fa-fw fas fa-calendar"></i>
+                <time datetime="2023-08-14T01:06:42+08:00"></time>
+            </span>
+            
+            
+                <span class="post-meta-position" title="作者IP归属地为山西">
+                    <i class="fas fa-location-dot post-meta-icon"></i>
+                    <span>山西</span>
+                </span>
+            
+            
+            
+                
+        </div>
+    </div>
+</div>
+<section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg"
+    xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+        <path id="gentle-wave"
+            d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path>
+    </defs>
+    <g class="parallax">
+        <use href="#gentle-wave" x="48" y="0"></use>
+        <use href="#gentle-wave" x="48" y="3"></use>
+        <use href="#gentle-wave" x="48" y="5"></use>
+        <use href="#gentle-wave" x="48" y="7"></use>
+    </g>
+</svg>
+</section>
+
+        
+</header>
+                <main class="layout" id="content-inner">
+    <div id="post">
+        <article class="post-content" id="article-container">
+            <h1 id="root用户"><a href="#root用户" class="headerlink" title="root用户"></a>root用户</h1><p>直接用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo su</span><br></pre></td></tr></table></figure>
+<p>或是给root用户设置一个密码，用root用户名来登陆</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd su</span><br></pre></td></tr></table></figure>
+
+<h1 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h1><p>更新软件包和软件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y</span><br></pre></td></tr></table></figure>
+<p>更新系统</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get dist-upgrade</span><br></pre></td></tr></table></figure>
+
+<h1 id="LNMP环境安装"><a href="#LNMP环境安装" class="headerlink" title="LNMP环境安装"></a>LNMP环境安装</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nginx mysql-server php php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-zip</span><br></pre></td></tr></table></figure>
+
+<h1 id="宝塔面板"><a href="#宝塔面板" class="headerlink" title="宝塔面板"></a>宝塔面板</h1><p>原版</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh &amp;amp;&amp;amp; sudo bash install.sh ed8484bec</span><br></pre></td></tr></table></figure>
+<p>开心版</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://io.bt.sy/install/install-ubuntu_6.0.sh &amp;amp;&amp;amp; sudo bash install.sh</span><br></pre></td></tr></table></figure>
+
+<h1 id="文件及目录操作命令"><a href="#文件及目录操作命令" class="headerlink" title="文件及目录操作命令"></a>文件及目录操作命令</h1><p><code>pwd</code>：显示用户当前所处的目录</p>
+<p><code>ls</code>：列出目录下的文件清单</p>
+<p><code>cd</code>：改变当前目录</p>
+<blockquote>
+<p><code>cd …</code> 返回上一级目录<br><code>cd /</code> 进入根目录<br>不加参数或参数为“~”，默认切换到用户主目录</p>
+</blockquote>
+<p><code>mkdir</code>：建立目录</p>
+<p><code>rmdir</code>：删除目录</p>
+<p><code>cp</code>：拷贝文件&#x2F;目录</p>
+<p><code>rm</code>：删除文件&#x2F;目录</p>
+<p><code>mv</code>：移动文件或目录</p>
+<blockquote>
+<p><code>mv &lt;源文件或目录&gt; &lt;目标文件或目录&gt;</code></p>
+</blockquote>
+<p><code>find</code>：查找文件所在的目录</p>
+<blockquote>
+<p><code>find &lt;路径&gt; &lt;匹配表达式&gt;</code><br>例：<code>find /dev -name test*</code> 在目录&#x2F;dev中查找文件名的前四个字母为test的文件</p>
+</blockquote>
+<p><code>chmod</code>：改变文件访问权限</p>
+<p><code>cat</code>：显示文件的内容</p>
+<h1 id="磁盘及系统操作"><a href="#磁盘及系统操作" class="headerlink" title="磁盘及系统操作"></a>磁盘及系统操作</h1><p><code>fdisk</code>：用来给磁盘进行分区，查看磁盘情况（使用参数-l）等。（使用该命令需ROOT权限）</p>
+<blockquote>
+<p><code>sudo fdisk -l</code> 显示系统的分区情况</p>
+</blockquote>
+<p><code>df</code>：检查硬盘所剩（所用）空间</p>
+<p><code>free</code>：查看当前系统内存的使用情况</p>
+<p><code>mount</code>：挂载文件系统</p>
+<p><code>umount</code>：卸载文件系统</p>
+<h1 id="文件压缩及解压命令"><a href="#文件压缩及解压命令" class="headerlink" title="文件压缩及解压命令"></a>文件压缩及解压命令</h1><p><code>gzip</code>：压缩文件，缺省的扩展名为.gz</p>
+<blockquote>
+<p><code>gzip test1.c</code> 压缩test1.c文件，压缩后的文件名为test1.c.gz</p>
+</blockquote>
+<p><code>gunzip</code>：解压扩展名为.gz、-gz、.z、-z、—_z、-Z的文件</p>
+<blockquote>
+<p><code>gunzip test1.c.gz</code> 解压test1.c.gz，解压后的文件名为test1.c</p>
+</blockquote>
+<h1 id="网络命令"><a href="#网络命令" class="headerlink" title="网络命令"></a>网络命令</h1><p><code>ping</code>：测试本主机和目标主机连通性</p>
+<blockquote>
+<p><code>ping &lt;参数&gt; &lt;主机名或IP地址&gt;</code> 参数：<code>-c &lt;count&gt;</code>：共发出count次信息（默认无限次），<code>-i &lt;interval&gt;</code>：两次信息之间的时间间隔为interval，（默认间隔为1秒）<br>例：<code>ping -c 5 -i 0.3 1.1.1.1</code> 测试本主机和1.1.1.1的连通性，发5次信息，间隔为0.3秒</p>
+</blockquote>
+<p><code>ifconfig</code>：配置网卡和显示网卡信息</p>
+<blockquote>
+<p><code>ifconfig eth0</code> 显示网卡eth0的信息</p>
+</blockquote>
+<h1 id="帮助命令"><a href="#帮助命令" class="headerlink" title="帮助命令"></a>帮助命令</h1><p><code>help</code>：查看Linux内置命令的帮助</p>
+<p><code>man</code>：显示某个命令的帮助手册</p>
+<h1 id="apt命令"><a href="#apt命令" class="headerlink" title="apt命令"></a>apt命令</h1><p><code>apt-cache search &lt;package&gt;</code>：搜索包</p>
+<p><code>apt-cache show &lt;package&gt;</code>：获取包的相关信息，如说明、大小、版本等</p>
+<p><code>sudo apt-get install &lt;packaget&gt;</code>：安装包</p>
+<p><code>sudo apt-get remove &lt;package&gt;</code>：删除包</p>
+<p><code>sudo apt-get clean &amp;&amp; sudo apt-get autoclean</code>：清理无用的包</p>
+
+        </article>
+        <div class="post-tools" id="post-tools">
+            <div class="post-tools-left">
+                
+                    <div class="post-reward">
+    <div class="reward-button button--animated" title="赞赏作者">
+        <script>
+            if (utils.isMobile()) { const showReward=()=> {
+                const rewardMain = document.querySelector('.reward-main');
+                rewardMain.style.display = 'flex';
+                document.addEventListener('touchstart', hideReward);
+                };
+                const hideReward = () => {
+                const rewardMain = document.querySelector('.reward-main');
+                rewardMain.style.display = 'none';
+                document.removeEventListener('touchstart', hideReward);
+                };
+                const rewardButton = document.querySelector('.reward-button');
+                rewardButton.addEventListener('touchstart', event => {
+                event.stopPropagation();
+                showReward();
+                });
+                }
+          </script>
+        <i class="fas fa-hamburger"></i> 
+        打赏作者
+    </div>
+    <div class="reward-main">
+        <ul class="reward-all">
+            <span class="reward-title">感谢你赐予我前进的力量</span>
+            <ul class="reward-group">
+                
+                    <li class="reward-item">
+                        <a href="/img/wechat.png" target="_blank">
+                            <img class="post-qr-code-img" src="/img/wechat.png" alt="微信">
+                        </a>
+                        <div class="post-qr-code-desc">微信</div>
+                    </li>
+                
+                
+                    <li class="reward-item">
+                        <a href="/img/alipay.png" target="_blank">
+                            <img class="post-qr-code-img" src="/img/alipay.png" alt="支付宝">
+                        </a>
+                        <div class="post-qr-code-desc">支付宝</div>
+                    </li>
+                
+            </ul>
+            <a class="reward-main-btn" href="/null">
+                <div class="reward-text">赞赏者名单</div>
+                <div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div>
+            </a>
+        </ul>
+    </div>
+</div>
+                
+                <div class="share-link mobile">
+    <div class="share-qrcode">
+        <div class="share-button" title="使用手机访问这篇文章">
+            <i class="fas fa-qrcode"></i>
+        </div>
+        <div class="share-main">
+            <div class="share-main-all">
+                <div id="qrcode" title="https://www.xmdvps.top/2023/08/14/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+                </div>
+                <div class="reward-dec">使用手机访问这篇文章</div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            new QRCode(document.getElementById("qrcode"), "https://www.xmdvps.top/2023/08/14/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/");
+        </script>
+    </div>
+</div>
+                <div class="share-link weibo"><a class="share-button" target="_blank"
+    href="https://service.weibo.com/share/share.php?title=Ubuntu常用命令&amp;url=https://www.xmdvps.top/2023/08/14/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/&amp;pic=/img/article/ubuntu.jpg"
+    title="分享到微博" rel="noopener external nofollow noreferrer noopener">
+    <i class="fab fa-weibo" style="font-size:22px"></i>
+</a>
+</div>
+<div class="share-link copyurl">
+<div class="share-button" id="post-share-url" title="复制链接" onclick="acrylic.copyPageUrl()">
+    <i class="fas fa-link"></i>
+</div>
+</div>
+            </div>
+            <div class="post-tools-right">
+                <div class="tag_share">
+                    <div class="post-meta__tag-list">
+                        
+                            <a href="/tags/%E7%B2%BE%E9%80%89/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                精选
+                                <span class="tagsPageCount">2</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%83%AD%E9%97%A8/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                热门
+                                <span class="tagsPageCount">2</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%99%E7%A8%8B/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                教程
+                                <span class="tagsPageCount">3</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-copyright">
+    <div class="post-copyright__author">
+        <a class="post-copyright__original" title="该文章为原创文章，注意版权协议">原创</a>
+        <a class="post-copyright-title" href="#">
+            <span>Ubuntu常用命令</span>
+        </a>
+    </div>
+    <div class="post-copyright__type">
+        <span class="post-copyright-info" id="post-copyright-url">
+            <a href="/2023/08/14/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">https://www.xmdvps.top/2023/08/14/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</a>
+        </span>
+        <button class="post-copyright-copybtn" onclick="acrylic.copyPageUrl()">
+            <i class="fas fa-paste copy-btn"></i>
+        </button>
+    </div>
+    <div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用 <a
+                href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a> 协议，完整转载请注明来自 <a
+                href="/">Xiaoming&#39;s Blog</a>
+            </span>
+        </div>
+</div>
+        <nav class="pagination-post" id="pagination">
+    
+        <div class="prev-post pull-left">
+            <a href="/2023/08/14/%E8%A7%A3%E5%86%B3VScode%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/">
+                <div class="pagination-info">
+                    <div class="label">上一篇</div>
+                    <div class="prev_info">解决VScode无法运行脚本报错</div>
+                </div>
+            </a>
+        </div>
+        <div class="next-post pull-right">
+            <a href="/2023/08/13/hello-world/">
+                <div class="pagination-info">
+                    <div class="label">下一篇</div>
+                    <div class="next_info">Hello World</div>
+                </div>
+            </a>
+        </div>
+    
+</nav>
+        
+            <div id="post-comment">
+    <div class="comment-head">
+        <div class="comment-headline">
+            <i class="fas fa-message fa-fw"></i>
+            <span> 评论</span>
+        </div>
+    </div>
+    <div class="comment-wrap">
+        <div id="comment"></div>
+        <script>
+    async function initComment(){
+        var initOptions = Object.assign(
+            {"envId":"https://twikoo.xmdvps.top","path":"window.location.pathname"},
+            {
+                el: '#comment',
+                onCommentLoaded: function() {
+                    GLOBALCONFIG.lightbox && acrylic.lightbox('#article-container img, #twikoo .tk-content img:not(.tk-owo-emotion)') 
+                }
+            }
+        )
+        await twikoo.init(initOptions)
+             
+    }
+</script>
+    </div>
+</div>
+            
+    </div>
+    <div class="aside-content" id="aside-content">
+    
+    
+        
+        <div class="card-widget card-info">
+    <div class="card-content">
+        <div class="card-info-avatar is-center">
+            <div class="author-info__sayhi" id="author-info__sayhi">
+            </div>
+            <img class="avatar-img entered loaded" data-lazy-src="/img/wp.png" onerror="this.onerror=null;this.src='/img/wp.png'" alt="avatar" data-ll-status="loaded" src="/img/xiaoming.jpg">
+            <div class="author-info__name">
+                xiaoming
+            </div>
+            <div class="author-info__description">这有关于<b>开发</b>、<b>技术</b>相关的问题和看法。<br>相信你可以在这里找到对你有用的知识和教程。</div>
+        </div>
+    </div>
+    <div class="banner-button-group">
+        <a class="banner-button" href="/">
+            <i class="fas fa-circle-chevron-right"></i>
+            <span class="banner-button-text">个人主页</span>
+        </a>
+    </div>
+    <div class="card-info-social-icons is-center">
+        
+            <a class="social-icon" target="_blank" rel="noopener" href="https://github.com/xiaoming-crypto" title="Github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        
+            <a class="social-icon" href="mailto:xiaoming@xmdvps.top" title="Mail">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        
+    </div>
+</div>
+     
+    
+    <div class="sticky_layout">
+        
+            <div class="card-widget" id="card-toc">
+    <div class="item-headline">
+        <i class="fas fa-bars"></i>
+        <span>文章目录</span>
+    </div>
+    <div class="toc-content" id="toc-content">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#root%E7%94%A8%E6%88%B7"><span class="toc-text">root用户</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0"><span class="toc-text">更新</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#LNMP%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85"><span class="toc-text">LNMP环境安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF"><span class="toc-text">宝塔面板</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%8F%8A%E7%9B%AE%E5%BD%95%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-text">文件及目录操作命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E5%8F%8A%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C"><span class="toc-text">磁盘及系统操作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%8E%8B%E7%BC%A9%E5%8F%8A%E8%A7%A3%E5%8E%8B%E5%91%BD%E4%BB%A4"><span class="toc-text">文件压缩及解压命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E5%91%BD%E4%BB%A4"><span class="toc-text">网络命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4"><span class="toc-text">帮助命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#apt%E5%91%BD%E4%BB%A4"><span class="toc-text">apt命令</span></a></li></ol>
+    </div>
+</div>
+            
+        
+            
+        <div class="card-widget card-recent-post">
+    <div class="item-headline">
+        <i class="fas fa-list-ol"></i>
+        <span>最近发布</span>
+    </div>
+    <div class="aside-list">
+        
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2023/08/14/%E8%A7%A3%E5%86%B3VScode%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/" title="解决VScode无法运行脚本报错">
+                    <img
+                        alt="解决VScode无法运行脚本报错"
+                        src="/img/article/vscode-error.png">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/2023/08/14/%E8%A7%A3%E5%86%B3VScode%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/">
+                            教程
+                        </a>
+                    
+                    <a class="title" href="/2023/08/14/%E8%A7%A3%E5%86%B3VScode%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/" title="解决VScode无法运行脚本报错">
+                        解决VScode无法运行脚本报错
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2023/08/14/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Ubuntu常用命令">
+                    <img
+                        alt="Ubuntu常用命令"
+                        src="/img/article/ubuntu.jpg">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/2023/08/14/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+                            Linux
+                        </a>
+                    
+                    <a class="title" href="/2023/08/14/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Ubuntu常用命令">
+                        Ubuntu常用命令
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2023/08/13/hello-world/" title="Hello World">
+                    <img
+                        alt="Hello World"
+                        src="/img/hello.jpg">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/2023/08/13/hello-world/">
+                            教程
+                        </a>
+                    
+                    <a class="title" href="/2023/08/13/hello-world/" title="Hello World">
+                        Hello World
+                    </a>
+                </div>
+            </div>
+                
+        
+    </div>
+</div>
+     
+        
+    </div>
+</div> 
+</main>
+                <footer id="footer">
+                    <div id="footer_deal">
+    
+        <a class="deal_link" target="_blank" href="https://github.com/xiaoming-crypto" rel="external nofollow noopener" title="Github">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    
+        <a class="deal_link" href="mailto:xiaoming@xmdvps.top" rel="external nofollow" title="Mail">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    
+    <img class="footer_mini_logo" src="/img/avatar.png"
+        title="返回顶部" onclick="acrylic.toTop()">
+    
+        <a class="deal_link" target="_blank" href="https://music.163.com/#/user/home?id=4026436646" rel="external nofollow noopener" title="网易云">
+            <i class="fa-solid fa-music"></i>
+        </a>
+    
+        <a class="deal_link" target="_blank" href="https://space.bilibili.com/646806156" rel="external nofollow noopener" title="bilibili">
+            <i class="fa-brands fa-bilibili"></i>
+        </a>
+    
+</div>    
+<div id="heo-footer">
+    
+        <div class="footer-group">
+            <h3 class="footer-title">导航</h3>
+            <div class="footer-links">
+                
+                    <a class="footer-item" href="/archives/" title="文章归档" rel="noopener external nofollow noreferrer">文章归档</a>
+                
+                    <a class="footer-item" href="/categories/" title="文章分类" rel="noopener external nofollow noreferrer">文章分类</a>
+                
+                    <a class="footer-item" href="/tags/" title="文章标签" rel="noopener external nofollow noreferrer">文章标签</a>
+                
+                    <a class="footer-item" href="/link/" title="友链" rel="noopener external nofollow noreferrer">友链</a>
+                    
+            </div>
+        </div>
+    
+        <div class="footer-group">
+            <h3 class="footer-title">服务</h3>
+            <div class="footer-links">
+                
+                    <a class="footer-item" target="_blank" href="https://vercel.com/" title="Vercel" rel="noopener external nofollow noreferrer noopener">Vercel</a>
+                
+                    <a class="footer-item" target="_blank" href="https://tongji.baidu.com/" title="百度统计" rel="noopener external nofollow noreferrer noopener">百度统计</a>
+                
+                    <a class="footer-item" target="_blank" href="https://www.cloudflare.com/" title="Cloudflare" rel="noopener external nofollow noreferrer noopener">Cloudflare</a>
+                    
+            </div>
+        </div>
+    
+        <div class="footer-group">
+            <h3 class="footer-title">Acrylic</h3>
+            <div class="footer-links">
+                
+                    <a class="footer-item" target="_blank" href="https://acrylic.zhheo.com/" title="主题官网" rel="noopener external nofollow noreferrer noopener">主题官网</a>
+                
+                    <a class="footer-item" target="_blank" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic" title="Github" rel="noopener external nofollow noreferrer noopener">Github</a>
+                
+                    <a class="footer-item" target="_blank" href="https://blog.zhheo.com/" title="Heo" rel="noopener external nofollow noreferrer noopener">Heo</a>
+                    
+            </div>
+        </div>
+    
+        <div class="footer-group">
+            <h3 class="footer-title">推荐友链</h3>
+            <div class="footer-links">
+                
+                    <a class="footer-item" target="_blank" href="https://blog.zhheo.com/" title="Heo" rel="noopener external nofollow noreferrer noopener">Heo</a>
+                
+                    <a class="footer-item" target="_blank" href="https://akilar.top" title="Akilar" rel="noopener external nofollow noreferrer noopener">Akilar</a>
+                    
+            </div>
+        </div>
+    
+    
+        <div class="footer-group">
+            <div class="footer-title-group">
+                <h3 class="footer-title">友链</h3>
+                <a class="random-friends-btn" href="javascript:randomLinksList();" rel="external nofollow">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </a>
+            </div>
+            <div class="footer-links" id="friend-links-in-footer">
+            </div>
+        </div>
+    
+</div>
+<div id="footer-section">
+    <div class="footer-section-links">
+        <div class="footer-section-left">
+            <div id="footer-section-tips">
+                <div class="copyright">©2023 - 2023 By 
+                    <a class="footer-section-link" href="/" rel="external nofollow">xiaoming</a>
+                    <a class="footer-section-link" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next" rel="external nofollow" target="_blank"> Theme By Acrylic-Next</a>
+                    <a class="footer-section-link" href="" rel="external nofollow" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section-right">
+            <a class="footer-section-link" href="">订阅</a>
+            
+            <a class="footer-section-link cc" target="_blank" href="https://creativecommons.org/licenses/by/4.0/" title="cc协议">
+                <i class="fas fa-closed-captioning"></i>
+            </a>
+        </div>
+    </div>
+</div>
+                </footer>
+            </div>
+         
+        <div>
+    <script type="text/javascript" src="/js/utils.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+<script src="/lib/pjax.min.js"></script>
+
+
+
+<script src="/lib/snackbar.min.js"></script>
+
+
+    
+<script src="/lib/view-image.min.js"></script>
+
+
+
+    
+<link rel="stylesheet" href="/lib/swiper.min.css">
+
+    
+<script src="/lib/swiper.min.js"></script>
+
+
+<div id="js-pjax">
+    
+     
+</div>
+
+
+    
+<script src="/js/extend/covercolor/web.js"></script>
+
+        
+
+    <script>const links=[{"name":"Adil","link":"https://blog.adil.com.cn"},{"name":"Akilar","link":"https://akilar.top"},{"name":"张洪Heo","link":"https://blog.zhheo.com"},{"name":"安知鱼`Blog","link":"https://anzhiy.cn"},{"name":"Leonus","link":"https://blog.leonus.cn"},{"name":"轻笑Chuckle","link":"https://www.chuckle.top"},{"name":"Ariasakaの小窝","link":"https://yisous.xyz"},{"name":"Fomalhaut??","link":"https://www.fomal.cc"}];function travelling(){const link=links[utils.randomNum(links.length)];utils.snackbarShow('您即将前往 ⌈ '+link.name+' ⌋ , 安全性未知',false,3000);setTimeout(()=>{window.open(link.link,"_blank")},3000)};function randomLinksList(){let data='';for(let i=1;i<=3;i++){const link=links[utils.randomNum(links.length)];data+='<a class="footer-item" href="'+link.link+'" target="_blank" rel="noopener nofollow">'+link.name+'</a>'};document.getElementById('friend-links-in-footer').innerHTML=data + '<a class="footer-item" href="/links/">更多</a>'};</script>
+
+
+    
+<script src="/js/extend/console/comment.js"></script>
+
+
+
+    <script>
+  let pjaxSelectors = [
+    'title',
+    '#body-wrap',
+    '#site-config',
+    'meta[name="description"]',
+    '#js-pjax'
+  ]
+  
+  const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+  })
+
+  document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+</script>
+    
+</div>
+        
+    <div id="local-search">
+    <div class="search-dialog">
+        <nav class="search-nav">
+            <span class="search-dialog-title">搜索</span>
+            <button class="search-close-button">
+                <i class="fas fa-times"></i>
+            </button>
+        </nav>
+        <div id="loading-database">
+            <i class="fas fa-spinner fa-pulse"></i>
+            <span>加载中</span>
+        </div>
+        <div class="search-wrap">
+            <div class="search-box">
+                <input class="search-box-input" placeholder="输入关键词快速查找" type="text" id="search-input" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off">
+            </div>
+            <div id="loading-status"></div>
+            <div id="search-results"></div>
+        </div>
+    </div>
+    <div id="search-mask"></div>
+</div>
+    
+<link rel="stylesheet" href="/css/search/local-search.css">
+
+    
+<script src="/js/extend/search/local-search.js"></script>
+
+
+     
+        <div class="needEndHide" id="nav-music" onclick="acrylic.musicToggle()">
+    <div id="nav-music-hoverTips">音乐已暂停</div>
+    <meting-js id="1708664797" server="tencent" type="playlist" mutex="true"
+        preload="none" data-lrctype="0" order="random" theme="var(--heo-main)"></meting-js>
+</div>
+    
+    </body>
+</html>
+<script>const posts=["2023/08/14/解决VScode无法运行脚本报错/","2023/08/14/Ubuntu常用命令/","2023/08/13/hello-world/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
