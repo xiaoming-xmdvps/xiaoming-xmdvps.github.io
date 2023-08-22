@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Xiaoming&#39;s Blog</title>
+<title>使用密钥认证机制远程登录linux | Xiaoming&#39;s Blog</title>
 <noscript>开启Javascript是必要的</noscript>
 <link rel="icon" type="image/x-icon" href="/img/avatar.png">
 <link rel="apple-touch-icon" href="/img/avatar.png">
@@ -38,7 +38,7 @@
 
     <script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?b0ba66b8ea2909c3fdc3b993b1def555"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>
 
-<script>var GLOBALCONFIG = {"root":"/","runtime":"2023-07-13 00:00:00","lazyload":{"enable":false,"error":"/img/wp.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":true,"lang":{"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早上好","noon":"中午好","afternoon":"下午好","night":"晚上好","goodnight":"晚安","iam":"!  我是"},"search":{"empty":"搜索结果为空","hit":"已为您找到 ${query} 条结果","placeholder":"输入关键词快速查找"}},"covercolor":false,"comment":{"enable":true,"twikooUrl":"https://twikoo.xmdvps.top"},"localsearch":{"preload":false,"path":"/search.xml"}};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":false,"page":false,"comment":false};</script>
+<script>var GLOBALCONFIG = {"root":"/","runtime":"2023-07-13 00:00:00","lazyload":{"enable":false,"error":"/img/wp.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":true,"lang":{"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早上好","noon":"中午好","afternoon":"下午好","night":"晚上好","goodnight":"晚安","iam":"!  我是"},"search":{"empty":"搜索结果为空","hit":"已为您找到 ${query} 条结果","placeholder":"输入关键词快速查找"}},"covercolor":false,"comment":{"enable":true,"twikooUrl":"https://twikoo.xmdvps.top"},"localsearch":{"preload":false,"path":"/search.xml"}};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":true,"is_page":false,"page":false,"toc":true,"comment":true};</script>
     <meta name="generator" content="Hexo 6.3.0"></head>
     <body id="body">
         
@@ -320,8 +320,8 @@
     </div>
 </div>    
         
-            <div class="page" id="body-wrap">
-                <header class="not-top-img" id="page-header">
+            <div class="post" id="body-wrap">
+                <header class="post-bg" id="page-header">
     <nav id="nav" class="show">
     <div id="nav-group">
         <div id="blog_name">
@@ -360,7 +360,7 @@
         </div>
         <div id="page-name-mask">
             <div id="page-name">
-                <a id="page-name-text" onclick="acrylic.toTop()">tags</a>
+                <a id="page-name-text" onclick="acrylic.toTop()">使用密钥认证机制远程登录linux</a>
             </div>
         </div>
         <div id="menus">
@@ -477,41 +477,420 @@
         </div>
     </div>
 </nav>
+    
+        <div class="coverdiv" id="coverdiv">
+    <img id="post-cover" class="nolazyload" src="/img/article/centos.png" alt="cover">
+</div>
+<div id="post-info">
+    <div id="post-firstinfo">
+        <div class="meta-firstline">
+            <a class="post-meta-original" title="该文章为原创文章，注意版权协议">
+                原创
+            </a>
+            
+            <span class="post-meta-categories">
+                
+                    <a class="post-meta-categories" href="/categories/Linux/">Linux</a>
+                
+            </span>
+            
+            <div class="tag_share">
+                <div class="post-meta__tag-list">
+                    
+                        <a class="post-meta__tags" href="/tags/%E7%B2%BE%E9%80%89/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">精选</span>
+                        </a>
+                    
+                        <a class="post-meta__tags" href="/tags/%E7%83%AD%E9%97%A8/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">热门</span>
+                        </a>
+                    
+                        <a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">教程</span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="post-title">使用密钥认证机制远程登录linux</h1>
+    <div id="post-meta">
+        <div class="meta-secondline">
+            <span class="post-meta-date" title="发布于">
+                <i class="post-meta-icon fa-fw fas fa-calendar"></i>
+                <time datetime="2023-08-23T00:22:48+08:00"></time>
+            </span>
+            
+            
+                <span class="post-meta-position" title="作者IP归属地为山西">
+                    <i class="fas fa-location-dot post-meta-icon"></i>
+                    <span>山西</span>
+                </span>
+            
+            
+            
+                
+        </div>
+    </div>
+</div>
+<section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg"
+    xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+        <path id="gentle-wave"
+            d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path>
+    </defs>
+    <g class="parallax">
+        <use href="#gentle-wave" x="48" y="0"></use>
+        <use href="#gentle-wave" x="48" y="3"></use>
+        <use href="#gentle-wave" x="48" y="5"></use>
+        <use href="#gentle-wave" x="48" y="7"></use>
+    </g>
+</svg>
+</section>
+
         
 </header>
-                <main class="layout hide-aside" id="content-inner">
-    <div id="page">
+                <main class="layout" id="content-inner">
+    <div id="post">
+        <article class="post-content" id="article-container">
+            <h1 id="创建目录-root-ssh-并设置权限"><a href="#创建目录-root-ssh-并设置权限" class="headerlink" title="创建目录 &#x2F;root&#x2F;.ssh 并设置权限"></a>创建目录 &#x2F;root&#x2F;.ssh 并设置权限</h1><p>创建目录：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /root/.ssh</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>mkdir</code>命令用来创建目录</p>
+</blockquote>
+<p>设置权限：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 700 /root/.ssh</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>chmod</code>命令是用来修改文件属性权限的</p>
+</blockquote>
+<h1 id="创建文件-root-ssh-authorized-keys"><a href="#创建文件-root-ssh-authorized-keys" class="headerlink" title="创建文件 &#x2F; root&#x2F;.ssh&#x2F;authorized_keys"></a>创建文件 &#x2F; root&#x2F;.ssh&#x2F;authorized_keys</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /root/.ssh/authorized_keys</span><br></pre></td></tr></table></figure>
+<p>之后把生成的公钥粘贴进去就好了</p>
+<blockquote>
+<p><code>vim</code>命令是编辑一个文本文件的命令</p>
+</blockquote>
+<h1 id="粘贴公钥"><a href="#粘贴公钥" class="headerlink" title="粘贴公钥"></a>粘贴公钥</h1><p>这里要简单介绍一下如何粘贴，用vim打开那个文件后，该文件不存在，所以vim会自动创建。按一下字母”i”然后同时按shift + Insert 进行粘贴（或者单击鼠标右键点粘贴即可），前提是已经复制到剪切板中了。粘贴好后按ESC，然后输入冒号wq 即<code>:wq</code>就保存好了。</p>
+<h1 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h1><p>之后用生成的私钥连接就行了，怎么生成密钥自行查找。</p>
+
+        </article>
+        <div class="post-tools" id="post-tools">
+            <div class="post-tools-left">
+                
+                    <div class="post-reward">
+    <div class="reward-button button--animated" title="赞赏作者">
+        <script>
+            if (utils.isMobile()) { const showReward=()=> {
+                const rewardMain = document.querySelector('.reward-main');
+                rewardMain.style.display = 'flex';
+                document.addEventListener('touchstart', hideReward);
+                };
+                const hideReward = () => {
+                const rewardMain = document.querySelector('.reward-main');
+                rewardMain.style.display = 'none';
+                document.removeEventListener('touchstart', hideReward);
+                };
+                const rewardButton = document.querySelector('.reward-button');
+                rewardButton.addEventListener('touchstart', event => {
+                event.stopPropagation();
+                showReward();
+                });
+                }
+          </script>
+        <i class="fas fa-hamburger"></i> 
+        打赏作者
+    </div>
+    <div class="reward-main">
+        <ul class="reward-all">
+            <span class="reward-title">感谢你赐予我前进的力量</span>
+            <ul class="reward-group">
+                
+                    <li class="reward-item">
+                        <a href="/img/wechat.png" target="_blank">
+                            <img class="post-qr-code-img" src="/img/wechat.png" alt="微信">
+                        </a>
+                        <div class="post-qr-code-desc">微信</div>
+                    </li>
+                
+                
+                    <li class="reward-item">
+                        <a href="/img/alipay.png" target="_blank">
+                            <img class="post-qr-code-img" src="/img/alipay.png" alt="支付宝">
+                        </a>
+                        <div class="post-qr-code-desc">支付宝</div>
+                    </li>
+                
+            </ul>
+            <a class="reward-main-btn" href="/null">
+                <div class="reward-text">赞赏者名单</div>
+                <div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div>
+            </a>
+        </ul>
+    </div>
+</div>
+                
+                <div class="share-link mobile">
+    <div class="share-qrcode">
+        <div class="share-button" title="使用手机访问这篇文章">
+            <i class="fas fa-qrcode"></i>
+        </div>
+        <div class="share-main">
+            <div class="share-main-all">
+                <div id="qrcode" title="https://www.xmdvps.top/2023/08/23/%E4%BD%BF%E7%94%A8%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95linux/">
+                </div>
+                <div class="reward-dec">使用手机访问这篇文章</div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            new QRCode(document.getElementById("qrcode"), "https://www.xmdvps.top/2023/08/23/%E4%BD%BF%E7%94%A8%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95linux/");
+        </script>
+    </div>
+</div>
+                <div class="share-link weibo"><a class="share-button" target="_blank"
+    href="https://service.weibo.com/share/share.php?title=使用密钥认证机制远程登录linux&amp;url=https://www.xmdvps.top/2023/08/23/%E4%BD%BF%E7%94%A8%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95linux/&amp;pic=/img/article/centos.png"
+    title="分享到微博" rel="noopener external nofollow noreferrer noopener">
+    <i class="fab fa-weibo" style="font-size:22px"></i>
+</a>
+</div>
+<div class="share-link copyurl">
+<div class="share-button" id="post-share-url" title="复制链接" onclick="acrylic.copyPageUrl()">
+    <i class="fas fa-link"></i>
+</div>
+</div>
+            </div>
+            <div class="post-tools-right">
+                <div class="tag_share">
+                    <div class="post-meta__tag-list">
+                        
+                            <a href="/tags/%E7%B2%BE%E9%80%89/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                精选
+                                <span class="tagsPageCount">3</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%83%AD%E9%97%A8/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                热门
+                                <span class="tagsPageCount">3</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%99%E7%A8%8B/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                教程
+                                <span class="tagsPageCount">4</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-copyright">
+    <div class="post-copyright__author">
+        <a class="post-copyright__original" title="该文章为原创文章，注意版权协议">原创</a>
+        <a class="post-copyright-title" href="#">
+            <span>使用密钥认证机制远程登录linux</span>
+        </a>
+    </div>
+    <div class="post-copyright__type">
+        <span class="post-copyright-info" id="post-copyright-url">
+            <a href="/2023/08/23/%E4%BD%BF%E7%94%A8%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95linux/">https://www.xmdvps.top/2023/08/23/%E4%BD%BF%E7%94%A8%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95linux/</a>
+        </span>
+        <button class="post-copyright-copybtn" onclick="acrylic.copyPageUrl()">
+            <i class="fas fa-paste copy-btn"></i>
+        </button>
+    </div>
+    <div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用 <a
+                href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a> 协议，完整转载请注明来自 <a
+                href="/">Xiaoming&#39;s Blog</a>
+            </span>
+        </div>
+</div>
+        <nav class="pagination-post" id="pagination">
+    
         
-            <h1 class="page-title">标签</h1>
-<div class="category-lists">
-    <div class="tag-cloud-list is-center">
+            <div class="next-post pull-full">
+                <a href="/2023/08/23/%E8%A7%A3%E5%86%B3VScode%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/">
+                    <div class="pagination-info">
+                        <div class="label">下一篇</div>
+                        <div class="next_info">解决VScode无法运行脚本报错</div>
+                    </div>
+                </a>
+            </div>
+                
         
-            <a href="/tags/%E7%B2%BE%E9%80%89/">
-                <span class="tags-punctuation">#</span> 
-                精选
-                <span class="tagsPageCount">3</span>
+    
+</nav>
+        
+            <div id="post-comment">
+    <div class="comment-head">
+        <div class="comment-headline">
+            <i class="fas fa-message fa-fw"></i>
+            <span> 评论</span>
+        </div>
+    </div>
+    <div class="comment-wrap">
+        <div id="comment"></div>
+        <script>
+    async function initComment(){
+        var initOptions = Object.assign(
+            {"envId":"https://twikoo.xmdvps.top","path":"window.location.pathname"},
+            {
+                el: '#comment',
+                onCommentLoaded: function() {
+                    GLOBALCONFIG.lightbox && acrylic.lightbox('#article-container img, #twikoo .tk-content img:not(.tk-owo-emotion)') 
+                }
+            }
+        )
+        await twikoo.init(initOptions)
+             
+    }
+</script>
+    </div>
+</div>
+            
+    </div>
+    <div class="aside-content" id="aside-content">
+    
+    
+        
+        <div class="card-widget card-info">
+    <div class="card-content">
+        <div class="card-info-avatar is-center">
+            <div class="author-info__sayhi" id="author-info__sayhi">
+            </div>
+            <img class="avatar-img entered loaded" data-lazy-src="/img/wp.png" onerror="this.onerror=null;this.src='/img/wp.png'" alt="avatar" data-ll-status="loaded" src="/img/xiaoming.jpg">
+            <div class="author-info__name">
+                xiaoming
+            </div>
+            <div class="author-info__description">这有关于<b>开发</b>、<b>技术</b>相关的问题和看法。<br>相信你可以在这里找到对你有用的知识和教程。</div>
+        </div>
+    </div>
+    <div class="banner-button-group">
+        <a class="banner-button" href="/">
+            <i class="fas fa-circle-chevron-right"></i>
+            <span class="banner-button-text">个人主页</span>
+        </a>
+    </div>
+    <div class="card-info-social-icons is-center">
+        
+            <a class="social-icon" target="_blank" rel="noopener" href="https://github.com/xiaoming-crypto" title="Github">
+                <i class="fa-brands fa-github"></i>
             </a>
         
-            <a href="/tags/%E7%83%AD%E9%97%A8/">
-                <span class="tags-punctuation">#</span> 
-                热门
-                <span class="tagsPageCount">3</span>
-            </a>
-        
-            <a href="/tags/%E6%95%99%E7%A8%8B/">
-                <span class="tags-punctuation">#</span> 
-                教程
-                <span class="tagsPageCount">4</span>
+            <a class="social-icon" href="mailto:xiaoming@xmdvps.top" title="Mail">
+                <i class="fa-solid fa-envelope"></i>
             </a>
         
     </div>
 </div>
-             
-            
+     
+    
+    <div class="sticky_layout">
+        
+            <div class="card-widget" id="card-toc">
+    <div class="item-headline">
+        <i class="fas fa-bars"></i>
+        <span>文章目录</span>
     </div>
-       
-</main>     
-
+    <div class="toc-content" id="toc-content">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95-root-ssh-%E5%B9%B6%E8%AE%BE%E7%BD%AE%E6%9D%83%E9%99%90"><span class="toc-text">创建目录 &#x2F;root&#x2F;.ssh 并设置权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6-root-ssh-authorized-keys"><span class="toc-text">创建文件 &#x2F; root&#x2F;.ssh&#x2F;authorized_keys</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B2%98%E8%B4%B4%E5%85%AC%E9%92%A5"><span class="toc-text">粘贴公钥</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5"><span class="toc-text">连接</span></a></li></ol>
+    </div>
+</div>
+            
+        
+            
+        <div class="card-widget card-recent-post">
+    <div class="item-headline">
+        <i class="fas fa-list-ol"></i>
+        <span>最近发布</span>
+    </div>
+    <div class="aside-list">
+        
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2023/08/23/%E4%BD%BF%E7%94%A8%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95linux/" title="使用密钥认证机制远程登录linux">
+                    <img
+                        alt="使用密钥认证机制远程登录linux"
+                        src="/img/article/centos.png">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/2023/08/23/%E4%BD%BF%E7%94%A8%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95linux/">
+                            Linux
+                        </a>
+                    
+                    <a class="title" href="/2023/08/23/%E4%BD%BF%E7%94%A8%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95linux/" title="使用密钥认证机制远程登录linux">
+                        使用密钥认证机制远程登录linux
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2023/08/23/%E8%A7%A3%E5%86%B3VScode%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/" title="解决VScode无法运行脚本报错">
+                    <img
+                        alt="解决VScode无法运行脚本报错"
+                        src="/img/article/vscode-error.png">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/2023/08/23/%E8%A7%A3%E5%86%B3VScode%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/">
+                            教程
+                        </a>
+                    
+                    <a class="title" href="/2023/08/23/%E8%A7%A3%E5%86%B3VScode%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/" title="解决VScode无法运行脚本报错">
+                        解决VScode无法运行脚本报错
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2023/08/14/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Ubuntu常用命令">
+                    <img
+                        alt="Ubuntu常用命令"
+                        src="/img/article/ubuntu.jpg">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/2023/08/14/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+                            Linux
+                        </a>
+                    
+                    <a class="title" href="/2023/08/14/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Ubuntu常用命令">
+                        Ubuntu常用命令
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2023/07/13/hello-world/" title="Hello World">
+                    <img
+                        alt="Hello World"
+                        src="/img/hello.jpg">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/2023/07/13/hello-world/">
+                            教程
+                        </a>
+                    
+                    <a class="title" href="/2023/07/13/hello-world/" title="Hello World">
+                        Hello World
+                    </a>
+                </div>
+            </div>
+                
+        
+    </div>
+</div>
+     
+        
+    </div>
+</div> 
+</main>
                 <footer id="footer">
                     <div id="footer_deal">
     
